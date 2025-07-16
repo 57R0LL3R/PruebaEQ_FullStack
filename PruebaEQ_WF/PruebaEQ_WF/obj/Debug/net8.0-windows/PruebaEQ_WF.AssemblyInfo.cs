@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaEQ_WF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54c1716dd6dbe5efabc83ff673431e6f17a26197")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+859904d15eebb55b4f47a6a4c4c24e198a3a2da8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaEQ_WF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaEQ_WF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

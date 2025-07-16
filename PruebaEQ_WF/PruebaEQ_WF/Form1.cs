@@ -23,7 +23,7 @@ namespace PruebaEQ_WF
             this.Hide();
 
             _timer = new System.Timers.Timer(60000);
-            _timer.Elapsed += async (s, ev) => await ProccesFilesAsync(); // Ejecuta el método
+            _timer.Elapsed += async (s, ev) => await ProccesFilesAsync();
             _timer.AutoReset = true;
             _timer.Enabled = true;
 
@@ -94,11 +94,11 @@ namespace PruebaEQ_WF
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:7209"); // Cambia al puerto correcto de tu API
+                client.BaseAddress = new Uri("https://localhost:7209");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-                HttpResponseMessage response = await client.PostAsJsonAsync("/api/logprocces", log); // Ajusta la ruta a la de tu endpoint real
+                HttpResponseMessage response = await client.PostAsJsonAsync("/api/logprocces", log);
 
                 if (response.IsSuccessStatusCode)
                 {

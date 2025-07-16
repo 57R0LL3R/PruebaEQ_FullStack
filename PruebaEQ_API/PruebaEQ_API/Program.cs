@@ -17,7 +17,7 @@ builder.Services.AddScoped<ILogProccesService,LogProccesService>();
 builder.Services.AddScoped<IDocKeyService, DocKeyService>();
 builder.Services.Configure<FormOptions>(options =>
 {
-    options.MultipartBodyLengthLimit = 10 * 1024 * 1024; // 10 MB
+    options.MultipartBodyLengthLimit = 10 * 1024 * 1024;
 });
 builder.Services.AddCors(options =>
 {

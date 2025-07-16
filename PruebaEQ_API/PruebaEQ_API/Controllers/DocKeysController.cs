@@ -49,8 +49,6 @@ namespace PruebaEQ_API.Controllers
             return Ok();
         }
 
-        // POST: api/DocKeys
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<DocKey>> PostDocKey(DocKey docKey)
         {
@@ -59,7 +57,6 @@ namespace PruebaEQ_API.Controllers
             return CreatedAtAction("GetDocKey", new { id = docKey.Id }, docKey);
         }
 
-        // DELETE: api/DocKeys/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDocKey(int id)
         {

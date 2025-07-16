@@ -22,7 +22,6 @@ namespace PruebaEQ_API.Controllers
             return await _logProccesService.GetAll();
         }
 
-        // GET: api/LogProcces/5
         [HttpGet("{id}")]
         public async Task<ActionResult<LogProcces>> GetLogProcces(int id)
         {
