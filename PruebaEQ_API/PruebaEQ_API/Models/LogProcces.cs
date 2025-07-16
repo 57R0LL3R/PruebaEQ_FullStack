@@ -12,9 +12,12 @@ namespace PruebaEQ_API.Models
         public string OriginalFileName { get; set; }
 
         [StringLength(200)]
+        public string Status { get; set; }
+        [StringLength(200)]
         public string? NewFileName { get; set; } = null;
         [Required]
         public DateTime DateProcces { get; set; } = DateTime.Now;
+        
 
     }
 }

@@ -1,10 +1,14 @@
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
+using Microsoft.AspNetCore.Components.RenderTree;
 using PruebaEQ_WF.Models;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Reflection.PortableExecutable;
 using System.Timers;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Path = System.IO.Path;
 namespace PruebaEQ_WF
 {
@@ -26,57 +30,105 @@ namespace PruebaEQ_WF
         }
         private async Task ProccesFilesAsync()
         {
-            try
-            {
                 Console.WriteLine("Revisando carpeta...");
 
-                string carpeta = @"C:\PruebaEQ";
-                var archivos = Directory.GetFiles(carpeta, "*.pdf");
-
-                foreach (var archivo in archivos)
+                string folder = @"C:\PruebaEQ";
+                if (!Directory.Exists(folder))
                 {
-                    string textoExtraido = ExtractTextFromPdf(archivo);
-                    var claves = await ObtenerClavesDesdeApi();
+                    Directory.CreateDirectory(folder);
+                }
+                var Files = Directory.GetFiles(folder, "*.pdf");
+                List<DocKey> keys = [];
+                if (Files.Length > 0)
+                {
+                    keys = await GetDocKeys();
+                }
 
-                    bool encontrada = false;
-                    string docName = "";
-
-                    foreach (var clave in claves)
+            foreach (var file in Files)
+            {
+                var splitfile = file.Split("\\");
+                var namefile = "\\" + splitfile[splitfile.Length - 1];
+                string ExtractedText = ExtractTextFromPdf(file);
+                bool founded = false;
+                string docName = "";
+                foreach (var key in keys)
+                {
+                    if (ExtractedText.Contains(key.Key, StringComparison.OrdinalIgnoreCase))
                     {
-                        if (textoExtraido.Contains(clave.Key, StringComparison.OrdinalIgnoreCase))
-                        {
-                            encontrada = true;
-                            docName = clave.DocName;
-                            break;
-                        }
+                        founded = true;
+                        docName = key.DocName+".pdf";
+                        break;
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error al procesar archivos: " + ex.Message);
+
+                string Proccessed = @"C:\PruebaEQ\OSC";
+                if (!Directory.Exists(Proccessed))
+                {
+                    Directory.CreateDirectory(Proccessed);
+                }
+
+                string Unknown = @"C:\PruebaEQ\UNKNOWN";
+                if (!Directory.Exists(Unknown))
+                {
+                    Directory.CreateDirectory(Unknown);
+                }
+
+                var rutaDestino = founded ? Proccessed + "\\" + docName : Unknown  + namefile;
+
+                if (!Path.Exists(rutaDestino))
+                {
+                    File.Move(file, rutaDestino); 
+                    LogProcces logProcces = new();
+                    var splitf = rutaDestino.Split("\\");
+                    var newname = founded ? rutaDestino.Split("\\")[splitf.Length - 1] : null;
+                    logProcces.Status = founded ? nameof(Proccessed) : nameof(Unknown);
+                    logProcces.NewFileName = newname;
+                    logProcces.OriginalFileName = file.Split("\\")[splitfile.Length - 1];
+                    await EnviarLogAsync(logProcces );
+                }
+
             }
         }
 
-
-        private static string ExtractTextFromPdf(string ruta)
+        public async Task EnviarLogAsync(LogProcces log)
         {
-            using (PdfReader reader = new PdfReader(ruta))
+            using (HttpClient client = new HttpClient())
             {
-                string texto = "";
+                client.BaseAddress = new Uri("https://localhost:7209"); // Cambia al puerto correcto de tu API
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpResponseMessage response = await client.PostAsJsonAsync("/api/logprocces", log); // Ajusta la ruta a la de tu endpoint real
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine("Log enviado correctamente");
+                }
+                else
+                {
+                    Console.WriteLine("Error al enviar el log: " + response.StatusCode);
+                }
+            }
+        }
+
+        private static string ExtractTextFromPdf(string uriPdf)
+        {
+            using (PdfReader reader = new PdfReader(uriPdf))
+            {
+                string text = "";
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                 {
-                    texto += PdfTextExtractor.GetTextFromPage(reader, i);
+                    text += PdfTextExtractor.GetTextFromPage(reader, i);
                 }
-                return texto;
+                return text;
             }
         }
-        private async Task<List<DocKey>> ObtenerClavesDesdeApi()
+        private async Task<List<DocKey>> GetDocKeys()
         {
             using (HttpClient client = new())
             {
                 client.BaseAddress = new Uri("https://localhost:7209"); 
-                HttpResponseMessage response = await client.GetAsync("/api/dockey");
+                HttpResponseMessage response = await client.GetAsync("/api/dockeys");
                 if (response.IsSuccessStatusCode)
                 {
                     return await response.Content.ReadFromJsonAsync<List<DocKey>>();

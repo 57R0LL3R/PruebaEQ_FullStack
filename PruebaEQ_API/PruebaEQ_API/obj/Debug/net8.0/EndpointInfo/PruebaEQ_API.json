@@ -357,6 +357,12 @@
             "minLength": 0,
             "type": "string"
           },
+          "status": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
           "newFileName": {
             "maxLength": 200,
             "minLength": 0,

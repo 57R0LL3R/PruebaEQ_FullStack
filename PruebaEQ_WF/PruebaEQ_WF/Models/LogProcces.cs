@@ -12,6 +12,7 @@ namespace PruebaEQ_WF.Models
         public int Id { get; set; }
         public string OriginalFileName { get; set; }
         public string? NewFileName { get; set; } = null;
+        public string Status { get; set; } = "Unknown";
         public DateTime DateProcces { get; set; } = DateTime.Now;
     }
 }

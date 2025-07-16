@@ -115,7 +115,6 @@ C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\System.ClientModel.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
@@ -329,3 +328,5 @@ C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_WF\PruebaEQ_WF\bin\Debug\net8.0-windows\itextsharp.dll
