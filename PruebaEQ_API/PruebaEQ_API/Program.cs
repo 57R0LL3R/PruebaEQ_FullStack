@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PruebaEQ_API.Models;
+using PruebaEQ_API.Services.Implementaciones;
+using PruebaEQ_API.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EQContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
-
+builder.Services.AddScoped<ILogProccesService,LogProccesService>();
+builder.Services.AddScoped<IDocKeyService, DocKeyService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
