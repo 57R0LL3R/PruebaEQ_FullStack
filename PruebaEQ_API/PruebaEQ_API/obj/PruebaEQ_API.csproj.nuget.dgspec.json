@@ -68,9 +68,9 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

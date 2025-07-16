@@ -46,7 +46,7 @@ namespace PruebaEQ_API.Controllers
 
             await _docKeyService.UpdateDocKey(id, docKey);
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/DocKeys

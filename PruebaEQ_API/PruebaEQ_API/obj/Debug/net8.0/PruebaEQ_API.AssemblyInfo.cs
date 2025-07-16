@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaEQ_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeb92918fca76f076fb1d1a0204a13efff732c20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+293a9164351e4523f6cbbf4fad2bca44073cb12d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaEQ_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaEQ_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

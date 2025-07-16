@@ -68,9 +68,9 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -153,6 +153,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
             }
           },
           "imports": [
