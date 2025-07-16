@@ -1,0 +1,109 @@
+body {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  background-color: #2a2a40;
+}
+
+.table {
+  background-color: #2d2d3d;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+.table thead {
+  background-color: #3a3a50;
+  color: #e0e0ff;
+}
+
+.table tbody tr:hover {
+  background-color: #3a3a50;
+  transition: background-color 0.3s;
+}
+
+.btn,
+input[type="file"],
+input[type="text"] {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #6c63ff88;
+}
+
+.toast {
+  opacity: 0.95;
+}
+
+input,
+button {
+  border-radius: 0.375rem;
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #ccc;
+  border-top-color: #6c63ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+#uploadForm{
+    box-shadow: 20px 20px 9px 1px rgb(0 0 0 / 0.2);
+    border: rgb(0 80 120 / 0.2) solid;
+    background-color: rgb(20 40 80 / 0.2);
+    max-width: 700px;
+    padding: 2em;
+}
+.ph-4{
+    padding-left: 5em;
+}
+.btn {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #6c63ff88;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 5px #6c63ffcc inset;
+}
+
+.th{
+    
+    background-color: rgb(20 40 80 / 0.2) !important;
+    color: #ffffff !important;
+}
+.fade-in-row {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
