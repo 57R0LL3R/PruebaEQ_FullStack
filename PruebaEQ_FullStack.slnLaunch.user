@@ -3,14 +3,14 @@
     "Name": "Nuevo perfil",
     "Projects": [
       {
-        "Path": "..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
-        "Action": "Start",
-        "DebugTarget": "PruebaEQ_WF"
-      },
-      {
-        "Path": "..\\PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj",
+        "Path": "PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Path": "PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
+        "Action": "Start",
+        "DebugTarget": "PruebaEQ_WF"
       }
     ]
   }

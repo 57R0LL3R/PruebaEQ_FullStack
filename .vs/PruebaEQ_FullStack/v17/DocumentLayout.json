@@ -3,22 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{415F7638-0937-BDA5-BFDF-FCF899389F27}|..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_wf\\pruebaeq_wf\\pruebaeq_wf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_fullstack\\pruebaeq_api\\pruebaeq_api\\models\\logprocces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|solutionrelative:pruebaeq_api\\pruebaeq_api\\models\\logprocces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B9BAD5A-732B-0824-5002-3764D838A637}|..\\PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_api\\pruebaeq_api\\models\\dockey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_fullstack\\pruebaeq_api\\pruebaeq_api\\models\\dockey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|solutionrelative:pruebaeq_api\\pruebaeq_api\\models\\dockey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{415F7638-0937-BDA5-BFDF-FCF899389F27}|..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_wf\\pruebaeq_wf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_fullstack\\pruebaeq_api\\pruebaeq_api\\models\\eqcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|solutionrelative:pruebaeq_api\\pruebaeq_api\\models\\eqcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B9BAD5A-732B-0824-5002-3764D838A637}|..\\PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_api\\pruebaeq_api\\models\\logprocces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_fullstack\\pruebaeq_api\\pruebaeq_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|solutionrelative:pruebaeq_api\\pruebaeq_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B9BAD5A-732B-0824-5002-3764D838A637}|..\\PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_api\\pruebaeq_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{415F7638-0937-BDA5-BFDF-FCF899389F27}|..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_wf\\pruebaeq_wf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|c:\\users\\drcec\\source\\repos\\pruebaeq_fullstack\\pruebaeq_api\\pruebaeq_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E3BFADC3-AC7D-1134-A5B7-C267D5D84E27}|PruebaEQ_API\\PruebaEQ_API\\PruebaEQ_API.csproj|solutionrelative:pruebaeq_api\\pruebaeq_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,79 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PruebaEQ_WF.csproj",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
-              "RelativeToolTip": "..\\PruebaEQ_WF\\PruebaEQ_WF\\PruebaEQ_WF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-15T23:42:41.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "LogProcces.cs",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
-              "RelativeToolTip": "..\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
+              "RelativeDocumentMoniker": "PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
+              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
+              "RelativeToolTip": "PruebaEQ_API\\PruebaEQ_API\\Models\\LogProcces.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T22:21:28.57Z",
+              "WhenOpened": "2025-07-16T02:45:02.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "DocKey.cs",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
-              "RelativeToolTip": "..\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
+              "RelativeDocumentMoniker": "PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
+              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
+              "RelativeToolTip": "PruebaEQ_API\\PruebaEQ_API\\Models\\DocKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T22:21:08.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_WF\\PruebaEQ_WF\\Form1.cs",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\Form1.cs",
-              "RelativeToolTip": "..\\PruebaEQ_WF\\PruebaEQ_WF\\Form1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T22:18:01.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\Program.cs",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_WF\\PruebaEQ_WF\\Program.cs",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_WF\\PruebaEQ_WF\\Program.cs",
-              "RelativeToolTip": "..\\PruebaEQ_WF\\PruebaEQ_WF\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T22:17:57.401Z",
+              "WhenOpened": "2025-07-16T02:43:06.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\appsettings.json",
+              "RelativeDocumentMoniker": "PruebaEQ_API\\PruebaEQ_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\appsettings.json",
+              "RelativeToolTip": "PruebaEQ_API\\PruebaEQ_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-16T02:40:59.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
-              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
-              "RelativeToolTip": "..\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
+              "RelativeDocumentMoniker": "PruebaEQ_API\\PruebaEQ_API\\Program.cs",
+              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Program.cs",
+              "RelativeToolTip": "PruebaEQ_API\\PruebaEQ_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T22:13:38.082Z",
+              "WhenOpened": "2025-07-16T02:40:32.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EQContext.cs",
+              "DocumentMoniker": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\EQContext.cs",
+              "RelativeDocumentMoniker": "PruebaEQ_API\\PruebaEQ_API\\Models\\EQContext.cs",
+              "ToolTip": "C:\\Users\\drcec\\source\\repos\\PruebaEQ_FullStack\\PruebaEQ_API\\PruebaEQ_API\\Models\\EQContext.cs",
+              "RelativeToolTip": "PruebaEQ_API\\PruebaEQ_API\\Models\\EQContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T02:35:41.983Z",
               "EditorCaption": ""
             }
           ]
