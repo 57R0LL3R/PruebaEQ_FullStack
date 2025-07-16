@@ -5,16 +5,16 @@ namespace PruebaEQ_API.Models
     public class LogProcces
     {
         [Key]
-        int Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [StringLength(200)]
-        string OriginalFileName { get; set; }
+        public string OriginalFileName { get; set; }
 
         [StringLength(200)]
-        string? NewFileName { get; set; } = null;
+        public string? NewFileName { get; set; } = null;
         [Required]
-        DateTime DateProcces { get; set; } = DateTime.Now;
+        public DateTime DateProcces { get; set; } = DateTime.Now;
 
     }
 }
