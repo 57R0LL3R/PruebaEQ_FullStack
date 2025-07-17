@@ -1,3 +1,8 @@
+/**
+ * Muestra un toast de Bootstrap en pantalla con un mensaje y estilo dado.
+ * @param {string} mensaje - Texto del mensaje a mostrar
+ * @param {string} tipo - Tipo del mensaje: "success", "error", "warning"
+ */
 function mostrarToast(mensaje, tipo = "success") {
   const colores = {
     success: "text-white bg-success",
@@ -6,7 +11,6 @@ function mostrarToast(mensaje, tipo = "success") {
   };
 
   const clase = colores[tipo] || colores.success;
-
   const id = "toast_" + Date.now();
 
   const toastHTML = `

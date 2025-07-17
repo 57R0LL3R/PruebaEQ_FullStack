@@ -1,5 +1,8 @@
 namespace PruebaEQ_WF
 {
+    // Punto de entrada de la aplicación de escritorio.
+    // Solo inicializa y ejecuta el formulario principal en segundo plano.
+
     internal static class Program
     {
         [STAThread]
@@ -9,4 +12,5 @@ namespace PruebaEQ_WF
             Application.Run(new Form1());
         }
     }
+
 }

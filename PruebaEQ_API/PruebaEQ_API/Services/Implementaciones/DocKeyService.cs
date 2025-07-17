@@ -5,7 +5,10 @@ using PruebaEQ_API.Services.Interfaces;
 
 namespace PruebaEQ_API.Services.Implementaciones
 {
-    public class DocKeyService(EQContext context) :IDocKeyService
+    // Servicio encargado de manejar la lógica de negocio para DocKeys.
+    // Aquí se definen las operaciones CRUD y se maneja el acceso a la base de datos.
+
+    public class DocKeyService(EQContext context) : IDocKeyService
     {
         private readonly EQContext _context = context;
 
@@ -17,17 +20,12 @@ namespace PruebaEQ_API.Services.Implementaciones
         public async Task<ActionResult<DocKey>?> Get(int id)
         {
             var docKey = await _context.DocKeys.FindAsync(id);
-            if (docKey == null)
-            {
-                return null;
-            }
-            return docKey;
+            return docKey ?? null;
         }
 
         public async Task<DocKey?> UpdateDocKey(int id, DocKey docKey)
         {
             _context.Entry(docKey).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -58,9 +56,8 @@ namespace PruebaEQ_API.Services.Implementaciones
         {
             var docKey = await _context.DocKeys.FindAsync(id);
             if (docKey == null)
-            {
                 return false;
-            }
+
             try
             {
                 _context.DocKeys.Remove(docKey);
@@ -74,4 +71,5 @@ namespace PruebaEQ_API.Services.Implementaciones
             }
         }
     }
+
 }

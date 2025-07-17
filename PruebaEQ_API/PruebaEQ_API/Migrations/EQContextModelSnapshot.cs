@@ -45,7 +45,7 @@ namespace PruebaEQ_API.Migrations
                     b.ToTable("DocKey", (string)null);
                 });
 
-            modelBuilder.Entity("PruebaEQ_API.Models.LogProcces", b =>
+            modelBuilder.Entity("PruebaEQ_API.Models.LogProcess", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,30 @@ namespace PruebaEQ_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LogProcces", (string)null);
+                    b.ToTable("LogProcess", (string)null);
+                });
+
+            modelBuilder.Entity("PruebaEQ_API.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ContrasenaHash")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User", (string)null);
                 });
 #pragma warning restore 612, 618
         }
