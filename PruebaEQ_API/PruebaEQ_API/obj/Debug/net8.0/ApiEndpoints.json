@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "PruebaEQ_API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PruebaEQ_API.Models.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PruebaEQ_API.Controllers.DocKeysController",
     "Method": "GetDocKeys",
     "RelativePath": "api/DocKeys",
@@ -118,7 +134,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PruebaEQ_API.Models.LogProcces, PruebaEQ_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PruebaEQ_API.Models.LogProcess, PruebaEQ_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -138,13 +154,13 @@
     "Parameters": [
       {
         "Name": "logProcces",
-        "Type": "PruebaEQ_API.Models.LogProcces",
+        "Type": "PruebaEQ_API.Models.LogProcess",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PruebaEQ_API.Models.LogProcces",
+        "Type": "PruebaEQ_API.Models.LogProcess",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -170,7 +186,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PruebaEQ_API.Models.LogProcces",
+        "Type": "PruebaEQ_API.Models.LogProcess",
         "MediaTypes": [
           "text/plain",
           "application/json",

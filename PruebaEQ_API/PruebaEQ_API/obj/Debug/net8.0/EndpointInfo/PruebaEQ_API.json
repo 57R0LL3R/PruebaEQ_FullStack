@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/DocKeys": {
       "get": {
         "tags": [
@@ -203,7 +234,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/LogProcces"
+                    "$ref": "#/components/schemas/LogProcess"
                   }
                 }
               },
@@ -211,7 +242,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/LogProcces"
+                    "$ref": "#/components/schemas/LogProcess"
                   }
                 }
               },
@@ -219,7 +250,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/LogProcces"
+                    "$ref": "#/components/schemas/LogProcess"
                   }
                 }
               }
@@ -235,17 +266,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogProcces"
+                "$ref": "#/components/schemas/LogProcess"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogProcces"
+                "$ref": "#/components/schemas/LogProcess"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LogProcces"
+                "$ref": "#/components/schemas/LogProcess"
               }
             }
           }
@@ -256,17 +287,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               }
             }
@@ -296,17 +327,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LogProcces"
+                  "$ref": "#/components/schemas/LogProcess"
                 }
               }
             }
@@ -341,7 +372,7 @@
         },
         "additionalProperties": false
       },
-      "LogProcces": {
+      "LogProcess": {
         "required": [
           "dateProcces",
           "originalFileName"
@@ -372,6 +403,20 @@
           "dateProcces": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDTO": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrasena": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

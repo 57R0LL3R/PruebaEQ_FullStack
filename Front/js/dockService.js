@@ -1,22 +1,34 @@
+const tabla = document.getElementById("tablaDocKeys");
 
-        const tabla = document.getElementById("tablaDocKeys");
-
-        async function cargarClaves() {
-        
-        tabla.innerHTML = `
-            <tr>
+/**
+ * Carga todas las claves desde la API y las muestra en la tabla.
+ */
+async function cargarClaves() {
+    // Mensaje temporal mientras carga
+    tabla.innerHTML = `
+        <tr>
             <td colspan="4" class="text-center text-secondary">Cargando...</td>
-            </tr>
-        `;
-        const res = await fetch("https://localhost:7209/api/dockeys");
-        const claves = await res.json();
+        </tr>
+    `;
 
-        await new Promise(resolve => setTimeout(resolve, 300)); 
+    await validToken();
+    const token = localStorage.getItem("Token");
 
-        tabla.innerHTML = ""; 
+    const res = await fetch("https://localhost:7209/api/dockeys", {
+        method: "GET",
+        headers: {
+            "Authorization": `Bearer ${token}`
+        }
+    });
 
-        claves.forEach(clave => {
-            tabla.innerHTML += `
+    const claves = await res.json();
+
+    await new Promise(resolve => setTimeout(resolve, 300)); // retardo visual
+
+    tabla.innerHTML = ""; // limpiar la tabla
+
+    claves.forEach(clave => {
+        tabla.innerHTML += `
             <tr>
                 <td>${clave.id}</td>
                 <td>${clave.key}</td>
@@ -26,14 +38,28 @@
                     <button class="btn btn-danger btn-sm" onclick="eliminarClave(${clave.id})">Eliminar</button>
                 </td>
             </tr>
-            `;
-        });
-        }
+        `;
+    });
+}
 
-        async function eliminarClave(id) {
-        await fetch(`https://localhost:7209/api/dockeys/${id}`, { method: "DELETE" });
-        mostrarToast("Clave eliminada", "success");
-        cargarClaves();
-        }
+/**
+ * Elimina una clave por su ID
+ * @param {number} id - ID del elemento a eliminar
+ */
+async function eliminarClave(id) {
+    await validToken();
+    const token = localStorage.getItem("Token");
 
-        cargarClaves();
+    await fetch(`https://localhost:7209/api/dockeys/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Authorization": `Bearer ${token}`
+        }
+    });
+
+    mostrarToast("Clave eliminada", "success");
+    cargarClaves(); // recargar tabla
+}
+
+// Ejecutar carga inicial
+cargarClaves();

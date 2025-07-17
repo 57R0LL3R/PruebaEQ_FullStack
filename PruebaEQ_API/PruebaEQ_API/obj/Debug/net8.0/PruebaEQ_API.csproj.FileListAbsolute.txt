@@ -54,6 +54,7 @@ C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Deb
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -281,4 +282,3 @@ C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\obj\Deb
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\obj\Debug\net8.0\PruebaEQ_API.pdb
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\obj\Debug\net8.0\PruebaEQ_API.genruntimeconfig.cache
 C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\obj\Debug\net8.0\ref\PruebaEQ_API.dll
-C:\Users\drcec\source\repos\PruebaEQ_FullStack\PruebaEQ_API\PruebaEQ_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
